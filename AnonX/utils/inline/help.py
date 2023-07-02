@@ -23,45 +23,13 @@ def help_pannel(_, START: Union[bool, int] = None):
         [
             [
                 InlineKeyboardButton(
-                    text="👨🏻‍💻 ᴀᴅᴍɪɴ 🏷️",
-                    callback_data="help_callback hb1",
-                ),
-                InlineKeyboardButton(
-                    text="🏴‍☠️ ʙʟᴀᴄᴋʟɪsᴛ 🚨",
-                    callback_data="help_callback hb3",
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📲 ʙʀᴏᴀᴅᴄᴀsᴛ 🛰️",
-                    callback_data="help_callback hb4",
-                ),
-                InlineKeyboardButton(
-                    text="🥷 ɢʙᴀɴ 📛",
-                    callback_data="help_callback hb12",
-                ),
-                InlineKeyboardButton(
-                    text="✍️ ʟʏʀɪᴄs 📃",
-                    callback_data="help_callback hb5",
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="🎧 ᴩʟᴀʏ ✮📷",
+                    text="🎧 ᴩʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs",
                     callback_data="help_callback hb8",
                 ),
-                InlineKeyboardButton(
-                    text="📼 ᴩʟᴀʏʟɪsᴛ ⊹♡",
-                    callback_data="help_callback hb6",
-                ),
-                InlineKeyboardButton(
-                    text="📽️ ᴠɪᴅᴇᴏᴄʜᴀᴛs 🎞️",
-                    callback_data="help_callback hb10",
-                ),
             ],
             [
                 InlineKeyboardButton(
-                    text="☣ sᴜᴅᴏ 🔓",
+                    text="🧑‍💻 sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs",
                     callback_data="help_callback hb9",
                 ),
             ],
