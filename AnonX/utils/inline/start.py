@@ -15,7 +15,7 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="𐏕ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅ𐏕",
+                text="𐏕 ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅ 𐏕",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
@@ -40,14 +40,6 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             )
         ],
         [
-            InlineKeyboardButton(
-                text="⧠ Sᴜᴘᴘᴏʀᴛ⬏", url=config.SUPPORT_GROUP
-            ),
-            InlineKeyboardButton(
-                text="⏍ Cʜᴀɴɴᴇʟ⬏", url=config.SUPPORT_CHANNEL
-            ),
-          ],
-          [
             InlineKeyboardButton(
                 text="『Oᴡɴᴇʀ』", user_id=OWNER
             )
