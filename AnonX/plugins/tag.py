@@ -7,47 +7,8 @@ from pyrogram.types import ChatPermissions
 
 spam_chats = []
 
-EMOJI = [ "🦋🦋🦋🦋🦋",
-          "🧚🌸🧋🍬🫖",
-          "🥀🌷🌹🌺💐",
-          "🌸🌿💮🌱🌵",
-          "❤️💚💙💜🖤",
-          "💓💕💞💗💖",
-          "🌸💐🌺🌹🦋",
-          "🍔🦪🍛🍲🥗",
-          "🍎🍓🍒🍑🌶️",
-          "🧋🥤🧋🥛🍷",
-          "🍬🍭🧁🎂🍡",
-          "🍨🧉🍺☕🍻",
-          "🥪🥧🍦🍥🍚",
-          "🫖☕🍹🍷🥛",
-          "☕🧃🍩🍦🍙",
-          "🍁🌾💮🍂🌿",
-          "🌨️🌥️⛈️🌩️🌧️",
-          "🌷🏵️🌸🌺💐",
-          "💮🌼🌻🍀🍁",
-          "🧟🦸🦹🧙👸",
-          "🧅🍠🥕🌽🥦",
-          "🐷🐹🐭🐨🐻‍❄️",
-          "🦋🐇🐀🐈🐈‍⬛",
-          "🌼🌳🌲🌴🌵",
-          "🥩🍋🍐🍈🍇",
-          "🍴🍽️🔪🍶🥃",
-          "🕌🏰🏩⛩️🏩",
-          "🎉🎊🎈🎂🎀",
-          "🪴🌵🌴🌳🌲",
-          "🎄🎋🎍🎑🎎",
-          "🦅🦜🕊️🦤🦢",
-          "🦤🦩🦚🦃🦆",
-          "🐬🦭🦈🐋🐳",
-          "🐔🐟🐠🐡🦐",
-          "🦩🦀🦑🐙🦪",
-          "🐦🦂🕷️🕸️🐚",
-          "🥪🍰🥧🍨🍨",
-          " 🥬🍉🧁🧇",
-        ]
 
-@app.on_message(filters.command(["tagall", "all", "tagmember"], prefixes=["/", "@", "#"]))
+@app.on_message(filters.command(["tagall", "all", "tagmember"], prefixes=["/", "#"]))
 async def mentionall(client, message):
     chat_id = message.chat.id
     if message.chat.type == "private":
@@ -90,10 +51,10 @@ async def mentionall(client, message):
 
         if usrnum == 1:
             if mode == "text_on_cmd":
-                txt = f"{msg}\n\n{usrtxt}"
+                txt = f"{usrtxt}\n\n{msg}"
                 await client.send_message(chat_id, txt)
             elif mode == "text_on_reply":
-                await msg.reply(f"[{random.choice(EMOJI)}](tg://user?id={usr.user.id})")
+               await msg.reply(usrtxt)
             await asyncio.sleep(4)
             usrnum = 0
             usrtxt = ""
