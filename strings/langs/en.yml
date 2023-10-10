@@ -83,7 +83,7 @@ start_6 : "❗️ **Supergroup Needed** ❗️\n\nPlease convert your **group** 
 start_7 : "**Blacklisted Chat**\n\nYou're chat has been blacklisted by the Bot. Please ask any SudoUser to whitelist chat first. Check [Sudolist from here]({0})"
 
 # Help
-help_1 : "Any Doubts join to Support Group @Remo_Support ask there.\n\nAll commands can be used with: /"
+help_1 : "Any Doubts join to Support Group @Remo_Support ask there.\n\n Special Tag for @all for Normal tag /all \n\nAll commands can be used with: /"
 help_2 : "Contact me in PM for help."
 
 # Settings
