@@ -23,30 +23,28 @@ def help_pannel(_, START: Union[bool, int] = None):
         [
             [
                 InlineKeyboardButton(
-                    text="🏴‍☠️ ʙʟᴀᴄᴋʟɪsᴛ 🚨",
+                    text=_["H_B_1"],
+                    callback_data="help_callback hb1",
+                ),
+                InlineKeyboardButton(
+                    text=_["H_B_2"],
+                    callback_data="help_callback hb2",
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text=_["H_B_3"],
                     callback_data="help_callback hb3",
                 ),
+                InlineKeyboardButton(
+                    text=_["H_B_4"],
+                    callback_data="help_callback hb4",
+                ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🥷 ɢʙᴀɴ 📛",
-                    callback_data="help_callback hb12",
-                ),
-                InlineKeyboardButton(
-                    text="✍️ ʟʏʀɪᴄs 📃",
+                    text=_["H_B_6"],
                     callback_data="help_callback hb5",
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="🎧 ᴩʟᴀʏ 📷",
-                    callback_data="help_callback hb8",
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="☣ sᴜᴅᴏ 🔓",
-                    callback_data="help_callback hb9",
                 ),
             ],
             mark,
@@ -65,7 +63,7 @@ def help_back_markup(_):
                 ),
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"], callback_data=f"close"
-                )
+                ),
             ]
         ]
     )
@@ -76,8 +74,8 @@ def private_help_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="❄ ʜᴇʟᴩ ❄",
-                callback_data="settings_back_helper",
+                text=_["S_B_1"],
+                url=f"https://t.me/{app.username}?start=help",
             ),
         ],
     ]
