@@ -33,10 +33,10 @@ async def shell_cmd(cmd):
 
 class YouTubeAPI:
     def __init__(self):
-        self.base = "https://www.youtube.com/watch?v="
+        self.base = "https://m.youtube.com/watch?v="
         self.regex = r"(?:youtube\.com|youtu\.be)"
-        self.status = "https://www.youtube.com/oembed?url="
-        self.listbase = "https://youtube.com/playlist?list="
+        self.status = "https://m.youtube.com/oembed?url="
+        self.listbase = "https://m.youtube.com/playlist?list="
         self.reg = re.compile(
             r"\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])"
         )
